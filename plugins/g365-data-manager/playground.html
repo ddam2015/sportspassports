@@ -1,0 +1,413 @@
+if( $data_columns->event_id !== 0 ) {
+    $ev_data = $wpdb->get_results(
+      "SELECT id, divisions
+      FROM $wpdb_events
+      WHERE id = $data_columns->event_id;"
+    );
+    if( empty($ev_data) || is_string($ev_data) ||  ) {
+      $data_columns->division_selector_birth_lock = '';
+      $data_columns->division_selector_class_lock = '';
+      $data_columns->division_selector_lock_type = '';
+    } else {
+      
+      $today = date("Y-m-d");
+      $cont_target_year = (date('Y', strtotime($today)) - (( intval(date('n', strtotime($today))) < 8 ) ? 0 : 1 )); 
+      $data_columns->division_selector_birth_lock = "> '" . ($cont_target_year - $data_columns->level) . "-07-30'" . '-OR';
+      $data_columns->division_selector_class_lock = '> ' . ($cont_target_year + 18 - $data_columns->level) . '-OR';
+      $data_columns->division_selector_lock_type = '';
+      
+      $grade_string = (12 - (intval($class_of) - date('Y', strtotime($today)) - (( intval(date('n', strtotime($today))) < 8 ) ? 0 : 1 )));
+//       $grade_string = (12 - (intval($class_of) - date('Y', strtotime($today)) - (( intval(date('n', strtotime($today))) < 8 ) ? 0 : 1 )));
+    }
+    return $grade_string;
+    
+//           var cont_date = new Date();
+//           //which school year
+//           var cont_target_year = (cont_date.getMonth() < 8) ? cont_date.getFullYear()-1 : cont_date.getFullYear();
+//           //divison
+//           var cont_division = parseInt(contribution_part_option.attr('data-g365_ref_val'));
+//           //add the minimum birth year for players
+//           contributions_compile[cont_id + '_birth_lock'] = "> '" + (cont_target_year - cont_division) + "-07-30'" + '-OR';
+//           //add the minimum class for players
+//           contributions_compile[cont_id + '_class_lock'] = '> ' + (cont_target_year + 18 - cont_division) + '-OR';
+//           //add the lock type
+//           contributions_compile[cont_id + '_lock_type'] = contribution_part_option.attr('data-g365_add_data');
+
+  }
+
+
+<ul class="accordion wrapper-staff" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <a class="accordion-title">Management</a>
+    <div class="accordion-content" data-tab-content>  
+      <ul class="wp-block-gallery columns-4 is-cropped staff">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-kanne.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-kanne.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-kanne-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Matt Kanne</h5>President<br><span>Business Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Miguel Bennett</h5>President<br><span>Basketball Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/max-piner.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/max-piner.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/max-piner-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Max Piner</h5>Executive Director<br><span>Tournaments</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/ben-webb.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/ben-webb.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/ben-webb-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Ben Webb</h5>Director<br><span>Web Programming</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/julio-ortega.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/julio-ortega.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/julio-ortega-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Julio Ortega</h5>Title<br><span>Placeholder</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/ashley-moore.jpg" alt data-id="525" data-link="https://dev.opengympremier.com/staff/attachment/ashley-moore/" class="wp-image-525" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/ashley-moore.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/ashley-moore-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Ashley Moore</h5>Director<br><span>Creative &amp; Branding</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/nick-podsadecki.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/nick-podsadecki.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/nick-podsadecki-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Nick Podsadecki</h5>Director<br><span>Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/ronn-see.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/ronn-see.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/ronn-see-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Ronn See</h5>Director<br><span>Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/josh-dozier.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/josh-dozier.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/josh-dozier-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Josh Dozier</h5>Assistant Director<br><span>Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/sam-frost.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/sam-frost.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/sam-frost-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Sam Frost</h5>Title<br><span>Placeholder</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a class="accordion-title">Basketball Directors</a>
+    <div class="accordion-content" data-tab-content>
+      <ul class="wp-block-gallery columns-4 is-cropped">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Miguel Bennett</h5>President<br><span>Basketball Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-mazarei.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-mazarei.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-mazarei-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Matt Mazarei</h5>Director<br><span>OGP Kings</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/kenroy-jarrett.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/kenroy-jarrett.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/kenroy-jarrett-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Kenroy Jarrett</h5>Director<br><span>OGP Select</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/armin-talle.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/armin-talle.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/armin-talle-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Armin Talle</h5>Director<br><span>Stampede</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/jamie-stopnitzky.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/jamie-stopnitzky.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/jamie-stopnitzky-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Jamie Stopnitzky</h5>Director<br><span>OGP HQ HS</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/paul-fabritz.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/paul-fabritz.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/paul-fabritz-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Paul Fabritz</h5>Director<br><span>PJF Performance</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/nick-hawkins.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/nick-hawkins.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/nick-hawkins-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Nick Hawkins</h5>Director<br><span>Placeholder</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a class="accordion-title">OGP HQ Coaching</a>
+    <div class="accordion-content" data-tab-content>
+      <ul class="wp-block-gallery columns-4 is-cropped">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/miguel-bennett-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Miguel Bennett</h5>President<br><span>Basketball Operations</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/antione-smith.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/antione-smith.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/antione-smith-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Antione Smith</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/gabriel-chambers.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/gabriel-chambers.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/gabriel-chambers-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Gabriel Chambers</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/marc-carrido.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/marc-carrido.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/marc-carrido-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Marc Carrido</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/rufus-jeminson.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/rufus-jeminson.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/rufus-jeminson-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Rufus Jemison</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/cedric-lusk.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/cedric-lusk.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/cedric-lusk-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Cedric Lusk</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/joe-landazabal.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/joe-landazabal.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/joe-landazabal-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Joe Landazabal</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/bill-maurer.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/bill-maurer.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/bill-maurer-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Bill Mauer</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/taku-muradzikwa.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/taku-muradzikwa.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/taku-muradzikwa-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Taku Muradzikwa</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/marcus-outland.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/marcus-outland.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/marcus-outland-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Marcus Outland</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/justin-pierce.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/justin-pierce.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/justin-pierce-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Justin Pierce</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/edgar-cortes.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/edgar-cortes.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/edgar-cortes-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Edgar Cortes</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/michael-cox.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/michael-cox.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/michael-cox-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Michael Cox</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/donte-archie.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/donte-archie.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/donte-archie-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Donte Archie</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/louie-nelson.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/louie-nelson.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/louie-nelson-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Louis Nelson</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/robert-clarke.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/robert-clarke.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/robert-clarke-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Robert Clarke</h5>Coach</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a class="accordion-title">OGP Kings Coaching</a>
+    <div class="accordion-content" data-tab-content>
+      <ul class="wp-block-gallery columns-4 is-cropped">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-mazarei.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-mazarei.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/matt-mazarei-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Matt Mazarei</h5>Director<br><span>OGP Kings</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/steven-anthony.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/steven-anthony.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/steven-anthony-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Steven Anthony</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/santino-de-jesus.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/santino-de-jesus.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/santino-de-jesus-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Santino de Jesus</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/ryan-rubino.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/ryan-rubino.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/ryan-rubino-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Ryan Rubino</h5>Coach</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a class="accordion-title">OGP Select Coaching</a>
+    <div class="accordion-content" data-tab-content>
+      <ul class="wp-block-gallery columns-4 is-cropped">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/kenroy-jarrett.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/kenroy-jarrett.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/kenroy-jarrett-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Kenroy Jarrett</h5>Director<br><span>OGP Select</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/cedric-lusk.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/cedric-lusk.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/cedric-lusk-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Cedric Lusk</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/dana-garland.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/dana-garland.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/dana-garland-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Dana Garland</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/james-perkins.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/james-perkins.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/james-perkins-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">James Perkins</h5>Coach</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a class="accordion-title">OGP Stampede Coaching</a>
+    <div class="accordion-content" data-tab-content>
+      <ul class="wp-block-gallery is-cropped columns-4">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/armin-talle.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/armin-talle.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/armin-talle-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Armin Talle</h5>Director<br><span>Stampede</span></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/tico-fuentes.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/tico-fuentes.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/tico-fuentes-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Tico Fuentes</h5>Coach</figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/alex-bisaillon.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/alex-bisaillon.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/alex-bisaillon-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Alex Bisaillon</h5>Coach</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a class="accordion-title">Support Staff</a>
+    <div class="accordion-content" data-tab-content>
+      <ul class="wp-block-gallery columns-5 is-cropped">
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/lyneya-turner.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/lyneya-turner.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/lyneya-turner-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Lyneya Turner</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/jacob-ortega.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/jacob-ortega.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/jacob-ortega-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Jacob Ortega</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/bailey-long.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/bailey-long.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/bailey-long-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Bailey Long</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/maddi-lawson.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/maddi-lawson.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/maddi-lawson-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Maddi Lawson</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/travis-podsadecki.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/travis-podsadecki.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/travis-podsadecki-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Travis Podsadecki</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/will-hornstein.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/will-hornstein.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/will-hornstein-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Will Hornstein</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/brian-stiver.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/brian-stiver.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/brian-stiver-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Brian Stiver</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/justin-wang.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/justin-wang.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/justin-wang-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Justin Wang</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/lauren-hall.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/lauren-hall.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/lauren-hall-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Lauren Hall</h5></figcaption>
+          </figure>
+        </li>
+        <li class="blocks-gallery-item">
+          <figure><img src="https://dev.opengympremier.com/wp-content/uploads/2019/06/kevin-taing.jpg" alt data-id="" data-link="https://dev.opengympremier.com/staff/attachment//" class="wp-image-" srcset="https://dev.opengympremier.com/wp-content/uploads/2019/06/kevin-taing.jpg 640w, https://dev.opengympremier.com/wp-content/uploads/2019/06/kevin-taing-150x150.jpg 150w" sizes="(max-width: 640px) 100vw, 640px">
+            <figcaption>
+              <h5 class="no-margin-bottom">Kevin Taing</h5></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>

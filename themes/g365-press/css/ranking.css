@@ -1,0 +1,142 @@
+.ranking ol {
+	margin: 0;
+	width: 20%;
+	position: absolute;
+	list-style-position: inside;
+}
+.ranking ol li {
+	width: 100%;
+	height: 50px;
+	margin: 0 0 10px;
+	background: #00B7FF;
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position: relative;
+}
+.ranking ol li:after {
+	content: "";
+	display: block;
+	height: 50px;
+	background: #fff;
+	width: 6px;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	right: -3px;
+}
+.ranking table td img {
+	max-width: 40px;
+	margin-right: 10px;
+}
+.ranking table,
+.count-data table {
+    counter-reset: rowNumber;
+}
+.ranking tbody.ranking-count>tr,
+.count-data tbody tr {
+    counter-increment: rowNumber;
+}
+.ranking tbody.ranking-count>tr>td:first-child {
+	text-align: center;
+}
+tbody.ranking-count>tr>td:first-child button:before,
+.count-data tbody td:before {
+	content: counter(rowNumber);
+	min-width: 14px;
+	color: #fff;
+	display: inline-block;
+}
+.count-data tbody td:before {
+	background: #1a315b;
+	color: #00ff2a;
+	padding: 0px 7px;
+	margin-right: 5px;
+	border-radius: 50%;
+	border: #00ff2a solid 1px;
+}
+.table-data table {
+	margin-bottom: 8rem;
+}
+.table-data table thead {
+	background: #00ff2a;
+}
+.table-data table thead,
+.table-data table tbody {
+	border: none;
+}
+.table-data table td {
+	min-width: 160px;
+}
+.table-data h2 {
+	padding: 2rem 1rem 0;
+	background: #00ff2a;
+	margin-bottom: 0;
+}
+.table-data h2:after {
+	content: "click to expand";
+	font-size: 0.8rem;
+}
+.table-data h2.selected:after {
+	content: "click to collapse";
+}
+.table-data .rollUp {
+	overflow: hidden;
+	max-height: 130px;
+	margin-bottom: 1rem;
+	transition: all 1s ease-out;
+	position: relative;
+}
+.table-data .rollUp:after {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	content: "";
+	background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+	height: 88px;
+}
+.table-data .rollUp.rollDown {
+	max-height: 10000px;
+	margin-bottom: 2rem;
+	padding-bottom: 88px;
+	overflow-x: auto;
+}
+.button-title {
+	vertical-align: top;
+	line-height: 1.5;
+}
+.ranking .table-extra {
+	position: absolute;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 300px;
+	overflow: auto;
+	box-shadow: 0 0 6px #00ff2a;
+}
+.table-extra .badge {
+	font-size: 0.7rem;
+	margin-right: 4px;
+}
+.table-extra table tbody td {
+    padding: 0;
+}
+
+.ui-sortable-helper td {
+	min-width: 240px;
+	width: 50%;
+}
+.ui-sortable-helper td.ty {
+	min-width: 32px;
+	width: 4%;
+}
+.ui-sortable-helper td.sm {
+	min-width: 100px;
+	width: 14%;
+}
+.ui-sortable-helper td.md {
+	min-width: 160px;
+	width: 20%;
+}

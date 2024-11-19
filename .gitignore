@@ -1,0 +1,29 @@
+# Exclude everything in root…
+/*
+!.gitignore
+
+# … except wp-content.
+# !/wp-content
+
+# Now exclude everything in wp-content …
+# /wp-content/*
+
+# … except plugins …
+!/plugins
+
+# Now exclude everything plugins …
+/plugins/*
+
+!/plugins/g365-data-manager
+
+# … and except themes.
+!/themes
+
+# Now exclude everything in themes …
+/themes/*
+
+# … except child theme spbd-press 
+!/themes/g365-press
+
+# … exclude assets folder
+/themes/g365-press/assets

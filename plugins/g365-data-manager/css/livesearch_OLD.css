@@ -1,0 +1,38 @@
+.ls_wrapper {
+  max-width: 500px;
+}
+.ls_wrapper,
+.ls_wrapper .ls_search {
+  position: relative;
+}
+.ls_wrapper .ls_search,
+.ls_wrapper .ls_result {
+  width: 100%;
+}
+.ls_wrapper .ls_result {
+  position: absolute;
+}
+.ls_wrapper .ls_search {
+  height: 37px;
+}
+.ls_wrapper .ls_search_wrap {
+  margin-right: 18px;
+}
+#area,
+#phone-1 {
+  width: 50px;
+}
+#phone-2 {
+  width: 60px;
+}
+.form-message[status='success'] {
+  color: green;
+}
+.form-message[status='error'] {
+  color: red;
+}
+.form-message[status='success'],
+.form-message[status='error'] {
+  font-size: 1.5em;
+  margin: 40px 0 20px;
+}

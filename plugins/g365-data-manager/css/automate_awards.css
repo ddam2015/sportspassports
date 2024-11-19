@@ -1,0 +1,94 @@
+#titles {
+    font-family: dharma-gothic-e, sans-serif;
+    font-size: 1.5rem;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+#award {
+    text-align: center;
+    padding-bottom: 20px !important;
+    width: 25%;
+}
+.badges {
+    max-width: 70% !important;
+}
+#all-files.active {
+    background-color: #2271b1 !important;
+    color: white !important;
+}
+#missing-files.active {
+    background-color: #2271b1 !important;
+    color: white !important;
+}
+#all-files, #missing-files {
+    background-color: white !important;
+    color: black !important;
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem;
+}
+#date-submit {
+    color: white !important;
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem;
+}
+.replace-container {
+    border: 3px solid yellow;
+}
+.delete-container {
+    border: 3px solid red;
+}
+.upload-container {
+    border: 3px solid #00ff2a;
+}
+.replace {
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem !important;
+    margin: 5px !important;
+}
+.delete {
+    padding-bottom: 1px !important;
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem !important;
+}
+.upload {
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem !important;
+}
+.undo {
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem !important;
+}
+.save {
+    float: right;
+    font-family: dharma-gothic-e, sans-serif !important;
+    font-size: 1.0rem !important;
+}
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.file_name {
+    border: 1px solid black;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination button {
+    display: inline-block !important;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: 1px solid #494a4f;
+    border-radius: 1px;
+    border: none;
+}
+.pagination button.active {
+    background-color: #00ff2a;
+    color: white;
+}

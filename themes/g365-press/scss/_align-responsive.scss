@@ -1,0 +1,137 @@
+//flex alignment
+
+//flex align center
+.small-align-center {
+  @include breakpoint(small only) {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+}
+
+.medium-align-center {
+  @include breakpoint(medium only) {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+}
+
+.large-align-center {
+  @include breakpoint(large only) {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+}
+
+//flex align left
+.small-align-left {
+  @include breakpoint(small only) {
+    -webkit-box-pack: flex-start !important;
+    -ms-flex-pack: flex-start !important;
+    justify-content: flex-start !important;
+  }
+}
+
+.medium-align-left {
+  @include breakpoint(medium only) {
+    -webkit-box-pack: flex-start !important;
+    -ms-flex-pack: flex-start !important;
+    justify-content: flex-start !important;
+  }
+}
+
+.large-align-left {
+  @include breakpoint(large only) {
+    -webkit-box-pack: flex-start !important;
+    -ms-flex-pack: flex-start !important;
+    justify-content: flex-start !important;
+  }
+}
+
+//flex align right
+.small-align-right {
+  @include breakpoint(small only) {
+    -webkit-box-pack: flex-end !important;
+    -ms-flex-pack: flex-end !important;
+    justify-content: flex-end !important;
+  }
+}
+
+.medium-align-right {
+  @include breakpoint(medium only) {
+    -webkit-box-pack: flex-end !important;
+    -ms-flex-pack: flex-end !important;
+    justify-content: flex-end !important;
+  }
+}
+
+.large-align-right {
+  @include breakpoint(large only) {
+    -webkit-box-pack: flex-end !important;
+    -ms-flex-pack: flex-end !important;
+    justify-content: flex-end !important;
+  }
+}
+
+
+
+//text alignment
+
+//text align center
+.small-text-center {
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+.medium-text-center {
+  @include breakpoint(medium only) {
+    text-align: center;
+  }
+}
+
+.large-text-center {
+  @include breakpoint(large only) {
+    text-align: center;
+  }
+}
+
+//text align left
+.small-text-left {
+  @include breakpoint(small only) {
+    text-align: left;
+  }
+}
+
+.medium-text-left {
+  @include breakpoint(medium only) {
+    text-align: left;
+  }
+}
+
+.large-text-left {
+  @include breakpoint(large only) {
+    text-align: left;
+  }
+}
+
+//text align right
+.small-text-right {
+  @include breakpoint(small only) {
+    text-align: right;
+  }
+}
+
+.medium-text-right {
+  @include breakpoint(medium only) {
+    text-align: right;
+  }
+}
+
+.large-text-right {
+  @include breakpoint(large only) {
+    text-align: right;
+  }
+}

@@ -1,0 +1,1459 @@
+@media all and (min-width: 1200px) {
+  .g365_data_manager_content_wrapper .medium-6 {
+    width: calc(50% - 1.875rem);
+  }
+}
+
+.g365_data_manager_content_wrapper {
+	padding: 20px;
+}
+.g365_data_manager_content_wrapper .grid-margin-x {
+  margin-left: -.625rem;
+  margin-right: -.625rem;
+}
+.g365_data_manager_content_wrapper .grid-margin-x>.cell {
+  width: calc(100% - 1.25rem);
+  margin-left: .625rem;
+  margin-right: .625rem;
+}
+.g365_data_manager_content_wrapper .grid-x {
+  display: flex;
+  flex-flow: row wrap;
+}
+.g365_data_manager_content_wrapper .cell {
+  flex: 0 0 auto;
+  min-height: 0px;
+  min-width: 0px;
+  width: 100%;
+}
+.g365_data_manager_content_wrapper .grid-x>.small-shrink,
+.g365_data_manager_content_wrapper .grid-x>.small-full,
+.g365_data_manager_content_wrapper .grid-x>.small-1,
+.g365_data_manager_content_wrapper .grid-x>.small-2,
+.g365_data_manager_content_wrapper .grid-x>.small-3,
+.g365_data_manager_content_wrapper .grid-x>.small-4,
+.g365_data_manager_content_wrapper .grid-x>.small-5,
+.g365_data_manager_content_wrapper .grid-x>.small-6,
+.g365_data_manager_content_wrapper .grid-x>.small-7,
+.g365_data_manager_content_wrapper .grid-x>.small-8,
+.g365_data_manager_content_wrapper .grid-x>.small-9,
+.g365_data_manager_content_wrapper .grid-x>.small-10,
+.g365_data_manager_content_wrapper .grid-x>.small-11,
+.g365_data_manager_content_wrapper .grid-x>.small-12,
+.g365_data_manager_content_wrapper .grid-x>.medium-shrink,
+.g365_data_manager_content_wrapper .grid-x>.medium-full,
+.g365_data_manager_content_wrapper .grid-x>.medium-1,
+.g365_data_manager_content_wrapper .grid-x>.medium-2,
+.g365_data_manager_content_wrapper .grid-x>.medium-3,
+.g365_data_manager_content_wrapper .grid-x>.medium-4,
+.g365_data_manager_content_wrapper .grid-x>.medium-5,
+.g365_data_manager_content_wrapper .grid-x>.medium-6,
+.g365_data_manager_content_wrapper .grid-x>.medium-7,
+.g365_data_manager_content_wrapper .grid-x>.medium-8,
+.g365_data_manager_content_wrapper .grid-x>.medium-9,
+.g365_data_manager_content_wrapper .grid-x>.medium-10,
+.g365_data_manager_content_wrapper .grid-x>.medium-11,
+.g365_data_manager_content_wrapper .grid-x>.medium-12,
+.g365_data_manager_content_wrapper .grid-x>.large-shrink,
+.g365_data_manager_content_wrapper .grid-x>.large-full,
+.g365_data_manager_content_wrapper .grid-x>.large-1,
+.g365_data_manager_content_wrapper .grid-x>.large-2,
+.g365_data_manager_content_wrapper .grid-x>.large-3,
+.g365_data_manager_content_wrapper .grid-x>.large-4,
+.g365_data_manager_content_wrapper .grid-x>.large-5,
+.g365_data_manager_content_wrapper .grid-x>.large-6,
+.g365_data_manager_content_wrapper .grid-x>.large-7,
+.g365_data_manager_content_wrapper .grid-x>.large-8,
+.g365_data_manager_content_wrapper .grid-x>.large-9,
+.g365_data_manager_content_wrapper .grid-x>.large-10,
+.g365_data_manager_content_wrapper .grid-x>.large-11,
+.g365_data_manager_content_wrapper .grid-x>.large-12 {
+  flex-basis: auto;
+}
+.g365_data_manager_content_wrapper .grid-x>.small-1,
+.g365_data_manager_content_wrapper .grid-x>.small-2,
+.g365_data_manager_content_wrapper .grid-x>.small-3,
+.g365_data_manager_content_wrapper .grid-x>.small-4,
+.g365_data_manager_content_wrapper .grid-x>.small-5,
+.g365_data_manager_content_wrapper .grid-x>.small-6,
+.g365_data_manager_content_wrapper .grid-x>.small-7,
+.g365_data_manager_content_wrapper .grid-x>.small-8,
+.g365_data_manager_content_wrapper .grid-x>.small-9,
+.g365_data_manager_content_wrapper .grid-x>.small-10,
+.g365_data_manager_content_wrapper .grid-x>.small-11,
+.g365_data_manager_content_wrapper .grid-x>.small-12,
+.g365_data_manager_content_wrapper .grid-x>.medium-shrink,
+.g365_data_manager_content_wrapper .grid-x>.medium-full,
+.g365_data_manager_content_wrapper .grid-x>.medium-1,
+.g365_data_manager_content_wrapper .grid-x>.medium-2,
+.g365_data_manager_content_wrapper .grid-x>.medium-3,
+.g365_data_manager_content_wrapper .grid-x>.medium-4,
+.g365_data_manager_content_wrapper .grid-x>.medium-5,
+.g365_data_manager_content_wrapper .grid-x>.medium-6,
+.g365_data_manager_content_wrapper .grid-x>.medium-7,
+.g365_data_manager_content_wrapper .grid-x>.medium-8,
+.g365_data_manager_content_wrapper .grid-x>.medium-9,
+.g365_data_manager_content_wrapper .grid-x>.medium-10,
+.g365_data_manager_content_wrapper .grid-x>.medium-11,
+.g365_data_manager_content_wrapper .grid-x>.medium-12,
+.g365_data_manager_content_wrapper .grid-x>.large-shrink,
+.g365_data_manager_content_wrapper .grid-x>.large-full,
+.g365_data_manager_content_wrapper .grid-x>.large-1,
+.g365_data_manager_content_wrapper .grid-x>.large-2,
+.g365_data_manager_content_wrapper .grid-x>.large-3,
+.g365_data_manager_content_wrapper .grid-x>.large-4,
+.g365_data_manager_content_wrapper .grid-x>.large-5,
+.g365_data_manager_content_wrapper .grid-x>.large-6,
+.g365_data_manager_content_wrapper .grid-x>.large-7,
+.g365_data_manager_content_wrapper .grid-x>.large-8,
+.g365_data_manager_content_wrapper .grid-x>.large-9,
+.g365_data_manager_content_wrapper .grid-x>.large-10,
+.g365_data_manager_content_wrapper .grid-x>.large-11,
+.g365_data_manager_content_wrapper .grid-x>.large-12 {
+  flex: 0 0 auto;
+}
+.g365_data_manager_content_wrapper .grid-x>.shrink {
+  width: auto;
+}
+.g365_data_manager_content_wrapper .cell.shrink {
+  flex: 0 0 auto;
+}
+.g365_data_manager_content_wrapper .grid-x>.small-12 {
+  width: calc(100% - 1.25rem);
+}
+.g365_data_manager_content_wrapper .grid-x>.small-6 {
+  width: calc(50% - 1.25rem);
+}
+@media screen and #{breakpoint(medium up)} {
+
+  .g365_data_manager_content_wrapper .grid-x>.medium-3 {
+    width: calc(25% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.medium-4 {
+    width: calc(33.33333% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.medium-4 {
+    width: calc(50% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.medium-8 {
+    width: calc(66.66667% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.medium-9 {
+    width: calc(75% - 1.875rem);
+  }
+  
+}
+@media screen and #{breakpoint(large up)} {
+
+  .g365_data_manager_content_wrapper .grid-x>.large-3 {
+    width: calc(25% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.large-4 {
+    width: calc(33.33333% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.large-6 {
+    width: calc(50% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.large-8 {
+    width: calc(66.66667% - 1.875rem);
+  }
+  .g365_data_manager_content_wrapper .grid-x>.large-9 {
+    width: calc(75% - 1.875rem);
+  }
+  
+}
+.g365_data_manager_content_wrapper .inline.input-shrink {
+  display: inline;
+  width: 3rem;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+  height: auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.g365_data_manager_content_wrapper .inline {
+	display: inline;
+}
+.g365_data_manager_content_wrapper .in-block {
+	display: inline-block;
+}
+.g365_data_manager_content_wrapper .text-left {
+  text-align: left;
+}
+.g365_data_manager_content_wrapper .text-right {
+  text-align: right;
+}
+.g365_data_manager_content_wrapper .text-center {
+  text-align: center;
+}
+.g365_data_manager_content_wrapper [type='radio']+label.block,
+.g365_data_manager_content_wrapper .block {
+	display: block;
+}
+.g365_data_manager_content_wrapper .widget-wrapper .no-margin-top {
+	margin-top: 0;
+}
+.g365_data_manager_content_wrapper .no-margin-bottom,
+.g365_data_manager_content_wrapper input.no-margin-bottom {
+	margin-bottom: 0;
+}
+.g365_data_manager_content_wrapper .no-border,
+.g365_data_manager_content_wrapper div.no-border {
+	border: none;
+}
+.g365_data_manager_content_wrapper .relative {
+	position: relative;
+}
+.g365_data_manager_content_wrapper .no-input-margin .ls_result_div table,
+.g365_data_manager_content_wrapper .maximum-width {
+	width: 100%;
+}
+.g365_data_manager_content_wrapper .max-width {
+	max-width: 100%;
+}
+.g365_data_manager_content_wrapper .maximum-height {
+	height: 100%;
+}
+.g365_data_manager_content_wrapper .pointer {
+	cursor: pointer;
+}
+.g365_data_manager_content_wrapper .dropdown-pane table {
+	width: 100%;
+}
+.g365_data_manager_content_wrapper label {
+  display: block;
+  padding-bottom: 10px;
+  line-height: 1.2;
+}
+.g365_data_manager_content_wrapper .tabs.green-border,
+.g365_data_manager_content_wrapper .green-border,
+.g365_data_manager_content_wrapper .gset {
+	border: $secondary-color solid 1px;
+}
+.g365_data_manager_content_wrapper .green-border-bottom {
+	border-bottom: $secondary-color solid 1px;
+}
+.g365_data_manager_content_wrapper .ghost-white-bg {
+	background: rgba($white, 0.2);
+}
+.g365_data_manager_content_wrapper .dk-bkgd,
+.g365_data_manager_content_wrapper .gset {
+	background: linear-gradient(176deg, $primary-color 10%, #0f1c34 42%);
+	color: $white;
+}
+.g365_data_manager_content_wrapper .gset .search {
+	color: $white;
+}
+.g365_data_manager_content_wrapper #g365_form_wrap .gset h1,
+.g365_data_manager_content_wrapper #g365_form_wrap .gset h2,
+.g365_data_manager_content_wrapper #g365_form_wrap .gset h3,
+.g365_data_manager_content_wrapper #g365_form_wrap .gset h4,
+.g365_data_manager_content_wrapper #g365_form_wrap .gset h5,
+.g365_data_manager_content_wrapper .gset a,
+.g365_data_manager_content_wrapper .gset h1,
+.g365_data_manager_content_wrapper .gset h2,
+.g365_data_manager_content_wrapper .gset h3,
+.g365_data_manager_content_wrapper .gset h4,
+.g365_data_manager_content_wrapper .gset h5,
+.g365_data_manager_content_wrapper .gset label {
+	color: $white;
+}
+.g365_data_manager_content_wrapper #g365_form_wrap .gset .error h4 {
+  color: $black;
+}
+.g365_data_manager_content_wrapper #g365_form_wrap .gset h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.g365_data_manager_content_wrapper .gset a:hover {
+	color: $secondary-color;
+}
+.g365_data_manager_content_wrapper .gset .button {
+  background: none;
+  color: $secondary-color;
+}
+.g365_data_manager_content_wrapper .gset .button:hover {
+  color: $white;
+}
+.g365_data_manager_content_wrapper .gset .input-group-label {
+  border-color: $white;
+  color: $secondary-color;
+}
+.g365_data_manager_content_wrapper .close-button { //large black, for 'X'
+	right: 4px;
+	top: 4px;
+	font-size: 2em;
+	line-height: 0.9;
+  padding-bottom: 0.3rem;
+	cursor: pointer;
+	width: 36px;
+	border: lighten($black, 20%) solid 1px;
+	background: $black;
+}
+
+//margins and paddings
+.g365_data_manager_content_wrapper .xlarge-margin {
+	margin: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-margin {
+	margin: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-margin {
+	margin: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-margin {
+	margin: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-margin {
+	margin: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-margin {
+	margin: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-margin-top {
+	margin-top: $global-margin*2;
+}
+.g365_data_manager_content_wrapper .large-margin-top {
+	margin-top: $global-margin+.6;
+}
+.g365_data_manager_content_wrapper .medium-margin-top {
+	margin-top: $global-margin;
+}
+.g365_data_manager_content_wrapper .small-margin-top {
+	margin-top: $global-margin/2;
+}
+.g365_data_manager_content_wrapper .tiny-margin-top {
+	margin-top: $global-margin/4;
+}
+.g365_data_manager_content_wrapper .no-margin-top {
+	margin-top: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-margin-bottom {
+	margin-bottom: $global-margin*2;
+}
+.g365_data_manager_content_wrapper .large-margin-bottom {
+	margin-bottom: $global-margin+.6;
+}
+.g365_data_manager_content_wrapper .medium-margin-bottom {
+	margin-bottom: $global-margin;
+}
+.g365_data_manager_content_wrapper .small-margin-bottom {
+	margin-bottom: $global-margin/2;
+}
+.g365_data_manager_content_wrapper .tiny-margin-bottom {
+	margin-bottom: $global-margin/4;
+}
+.g365_data_manager_content_wrapper .no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-margin-left {
+	margin-left: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-margin-left {
+	margin-left: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-margin-left {
+	margin-left: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-margin-left {
+	margin-left: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-margin-left {
+	margin-left: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-margin-left {
+	margin-left: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-margin-right {
+	margin-right: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-margin-right {
+	margin-right: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-margin-right {
+	margin-right: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-margin-right {
+	margin-right: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-margin-right {
+	margin-right: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-margin-right {
+	margin-right: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-margin-sides {
+	margin-left: $global-margin*2;
+	margin-right: $global-margin*2;
+}
+.g365_data_manager_content_wrapper .large-margin-sides {
+	margin-left: $global-margin+.6;
+	margin-right: $global-margin+.6;
+}
+.g365_data_manager_content_wrapper .medium-margin-sides {
+	margin-left: $global-margin;
+	margin-right: $global-margin;
+}
+.g365_data_manager_content_wrapper .small-margin-sides {
+	margin-left: $global-margin/2;
+	margin-right: $global-margin/2;
+}
+.g365_data_manager_content_wrapper .tiny-margin-sides {
+	margin-left: $global-margin/4;
+	margin-right: $global-margin/4;
+}
+.g365_data_manager_content_wrapper .no-margin-sides {
+	margin-left: 0;
+	margin-right: 0;
+}
+.g365_data_manager_content_wrapper .auto-margin-sides {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.g365_data_manager_content_wrapper .xlarge-padding {
+	padding: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-padding {
+	padding: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-padding {
+	padding: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-padding {
+	padding: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-padding {
+	padding: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-padding {
+	padding: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-padding-bottom {
+	padding-bottom: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-padding-bottom {
+	padding-bottom: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-padding-bottom {
+	padding-bottom: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-padding-bottom {
+	padding-bottom: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-padding-bottom {
+	padding-bottom: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-padding-bottom {
+	padding-bottom: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-padding-top {
+	padding-top: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-padding-top {
+	padding-top: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-padding-top {
+	padding-top: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-padding-top {
+	padding-top: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-padding-top {
+	padding-top: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-padding-top {
+	padding-top: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-padding-left {
+	padding-left: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-padding-left {
+	padding-left: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-padding-left {
+	padding-left: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-padding-left {
+	padding-left: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-padding-left {
+	padding-left: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-padding-left {
+	padding-left: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-padding-right {
+	padding-right: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-padding-right {
+	padding-right: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-padding-right {
+	padding-right: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-padding-right {
+	padding-right: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-padding-right {
+	padding-right: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-padding-right {
+	padding-right: 0;
+}
+
+.g365_data_manager_content_wrapper .xlarge-padding-sides {
+	padding-left: $global-padding*2;
+	padding-right: $global-padding*2;
+}
+.g365_data_manager_content_wrapper .large-padding-sides {
+	padding-left: $global-padding+.6;
+	padding-right: $global-padding+.6;
+}
+.g365_data_manager_content_wrapper .medium-padding-sides {
+	padding-left: $global-padding;
+	padding-right: $global-padding;
+}
+.g365_data_manager_content_wrapper .small-padding-sides {
+	padding-left: $global-padding/2;
+	padding-right: $global-padding/2;
+}
+.g365_data_manager_content_wrapper .tiny-padding-sides {
+	padding-left: $global-padding/4;
+	padding-right: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .no-padding-sides {
+	padding-left: 0;
+	padding-right: 0;
+}
+.g365_data_manager_content_wrapper .green {
+	color: $success-color;
+}
+.g365_data_manager_content_wrapper .gset .color-prime,
+.g365_data_manager_content_wrapper .color-prime {
+	color: $primary-color;
+}
+.g365_data_manager_content_wrapper a.single_add_to_cart_button {
+    height: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    font-size: 1rem;
+}
+.g365_data_manager_content_wrapper .gset .name-emphasis {
+  background: $secondary-color;
+  line-height: 1;
+  border: 4px double $white;
+  color: $primary-color;
+  padding-bottom: $global-padding/8;
+}
+
+.g365_data_manager_content_wrapper .color-second {
+	color: $secondary-color;
+}
+.g365_data_manager_content_wrapper .cute {
+	font-size: 0.85rem;
+}
+.g365_data_manager_content_wrapper .loud {
+  font-size: 1.2rem;
+}
+.g365_data_manager_content_wrapper .louder {
+  font-size: 1.4rem;
+}
+.g365_data_manager_content_wrapper .loudest {
+  font-size: 1.6rem;
+}
+.g365_data_manager_content_wrapper .count_totals {
+  color: $light-gray;
+  font-weight: 500;
+}
+.g365_data_manager_content_wrapper .emphasis {
+  font-weight: 700;
+}
+.g365_data_manager_content_wrapper .name-emphasis {
+  border-bottom: 1px dashed $secondary-color;
+}
+.g365_data_manager_content_wrapper .vertical-padding {
+	padding-top: $global-margin/2;
+	padding-bottom: $global-margin/2;
+}
+
+.g365_data_manager_content_wrapper .ls_container a.button span.float-right {
+	font-size: 1rem;
+  margin-left: 10px;
+}
+.g365_data_manager_content_wrapper .ls_result_div .button {
+  text-align: left;
+}
+.g365_data_manager_content_wrapper .ls_result_div .button.expanded {
+  display: inline-block;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0
+}
+.g365_data_manager_content_wrapper .center-result .ls_result_div .button {
+  text-align: center;
+}
+.g365_data_manager_content_wrapper .hide {
+  display: none;
+}
+.g365_data_manager_content_wrapper .float-right {
+  float: right;
+}
+.g365_data_manager_content_wrapper .float-left {
+  float: left;
+}
+.g365_data_manager_content_wrapper .no-input-margin .g365_livesearch_input[type='text'],
+.g365_data_manager_content_wrapper .no-input-margin .ls_result_div table {
+  margin: 0;
+}
+.g365_data_manager_content_wrapper .ls_result_div.no-add-buttons .g365_add_button {
+  display: none;
+}
+
+.g365_data_manager_content_wrapper .search{
+  background: none;
+}
+
+.g365_data_manager_content_wrapper .callout {
+  padding: 2rem;
+  border: 1px solid $secondary-color;
+}
+
+
+//form
+.g365_data_manager_content_wrapper [type='text'],
+.g365_data_manager_content_wrapper [type='password'],
+.g365_data_manager_content_wrapper [type='date'],
+.g365_data_manager_content_wrapper [type='datetime'],
+.g365_data_manager_content_wrapper [type='datetime-local'],
+.g365_data_manager_content_wrapper [type='month'],
+.g365_data_manager_content_wrapper [type='week'],
+.g365_data_manager_content_wrapper [type='email'],
+.g365_data_manager_content_wrapper [type='number'],
+.g365_data_manager_content_wrapper [type='search'],
+.g365_data_manager_content_wrapper [type='tel'],
+.g365_data_manager_content_wrapper [type='time'],
+.g365_data_manager_content_wrapper [type='url'],
+.g365_data_manager_content_wrapper [type='color'],
+.g365_data_manager_content_wrapper textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4375rem;
+  margin: 0 0 $global-padding/2;
+  padding: $global-padding/4;
+  border: 1px solid $light-gray;
+  border-radius: 0;
+  background-color: $white;
+  -webkit-box-shadow: inset 0 1px 2px rgba($dark-gray,0.2);
+  box-shadow: inset 0 1px 2px rgba($dark-gray,0.2);
+  font-family: inherit;
+  font-size: $global-font-size;
+  font-weight: normal;
+  color: $primary-color;
+  transition: box-shadow 0.5s,border-color 0.25s ease-in-out;
+  appearance: none;
+}
+.g365_data_manager_content_wrapper .g365_livesearch_input {
+  margin-bottom: 0;
+}
+.g365_data_manager_content_wrapper select {
+  width: 100%;
+  max-width: none;
+  height: 2.4375rem;
+  margin: 0 0 $global-padding/2;
+  padding: $global-padding/4;
+  appearance: none;
+  border: 1px solid $light-gray;
+  border-radius: 0;
+  background-color: $white;
+  font-family: inherit;
+  font-size: $global-font-size;
+  line-height: normal;
+  color: $primary-color;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right -1rem center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+  padding-right: 1.5rem;
+  transition: box-shadow 0.5s,border-color 0.25s ease-in-out;
+}
+.g365_data_manager_content_wrapper .no-input-margin>.button,
+.g365_data_manager_content_wrapper .no-input-margin>[type='text'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='password'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='date'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='datetime'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='datetime-local'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='month'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='week'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='email'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='number'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='search'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='tel'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='time'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='url'],
+.g365_data_manager_content_wrapper .no-input-margin>[type='color'],
+.g365_data_manager_content_wrapper .no-input-margin>textarea,
+.g365_data_manager_content_wrapper .no-input-margin>select,
+.g365_data_manager_content_wrapper .no-input-margin .g365_livesearch_input[type='text'],
+.g365_data_manager_content_wrapper .no-input-margin .ls_result_div table {
+  margin: 0;
+  float: none;
+}
+.g365_data_manager_content_wrapper option:disabled {
+  background: $medium-gray;
+  color: $white;
+}
+.g365_data_manager_content_wrapper .form-disabled {
+  background: $light-gray;
+}
+.g365_data_manager_content_wrapper .form-disabled .hide-on-disable,
+.g365_data_manager_content_wrapper .ls_result_div.no-add-buttons .g365_add_button {
+  display: none;
+}
+.g365_data_manager_content_wrapper .form-disabled.form-collapse-title small {
+  background: $medium-gray;
+  color: $dark-gray;
+}
+.g365_data_manager_content_wrapper .form-disabled.green-border {
+  border-color: $medium-gray;
+}
+.g365_data_manager_content_wrapper .gset .form-disabled {
+  opacity: 0.8;
+}
+.g365_data_manager_content_wrapper .gset .form-disabled label {
+  color: $dark-gray;
+}
+.g365_data_manager_content_wrapper .gset .form-disabled .count_totals,
+.g365_data_manager_content_wrapper .form-disabled .green {
+  color: darken($medium-gray, 14%);
+}
+.g365_data_manager_content_wrapper .req {
+  color: $alert-color;
+}
+
+.g365_data_manager_content_wrapper .pl_block {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: $dark-gray solid 1px;
+}
+.g365_data_manager_content_wrapper .verified-player td,
+.g365_data_manager_content_wrapper .verified-team td {
+  background: rgba($success-color,0.08);
+}
+.g365_data_manager_content_wrapper .unverified-player td,
+.g365_data_manager_content_wrapper .unverified-team td {
+  background: rgba($alert-color,0.08);
+}
+.g365_data_manager_content_wrapper .pl_block td {
+  border-bottom: $dark-gray solid 1px;
+  vertical-align: middle;
+}
+.g365_data_manager_content_wrapper .tournament-players {}
+.g365_data_manager_content_wrapper .tournament-players.verified-player {
+  background: $success-color;
+}
+.g365_data_manager_content_wrapper .tournament-players.unverified-player {
+  background: $alert-color;
+}
+.g365_data_manager_content_wrapper .tournament-players.unverified-player td {
+  color: $white;
+}
+.g365_data_manager_content_wrapper .pl_name {}
+.g365_data_manager_content_wrapper .pl_age {}
+.g365_data_manager_content_wrapper .pl_birthday {}
+.g365_data_manager_content_wrapper .jersey_num {}
+.g365_data_manager_content_wrapper .tournament-players .verification-form {}
+
+.g365_data_manager_content_wrapper table.striped>tbody>tr:nth-child(even) {
+  background: #eee;
+}
+.g365_data_manager_content_wrapper .ls_result_div table.unstriped tbody tr:first-child td a {
+    margin-top: $global-margin/4 + 0.2;
+}
+.g365_data_manager_content_wrapper .g365_form_wrap .error {
+  color: $alert-color;
+}
+.g365_data_manager_content_wrapper .g365_form_wrap li.error_item {
+  margin: 10px 0;
+  padding: 10px 0 2px 10px;
+  border-top: $white dotted 2px;
+  border-bottom: $white dotted 2px;
+  background: lighten($alert-color, 30%);
+}
+.g365_data_manager_content_wrapper .g365_form_wrap .error_wrapper>.gset,
+.g365_data_manager_content_wrapper .g365_form_wrap .error_wrapper .green-border {
+  border-color: $alert-color;
+}
+.g365_data_manager_content_wrapper .g365_form_wrap .error_parent {
+  border: 1px solid $alert-color;
+}
+.g365_data_manager_content_wrapper .g365-expand-collapse-fieldset {
+  cursor: pointer;
+}
+.g365_data_manager_content_wrapper .g365-expand-collapse-fieldset a {
+  margin-bottom: $global-margin/4 + 0.2;
+  float: right;
+  padding: $global-margin/8 $global-margin/4;
+  font-size: 12px;
+  line-height: 1;
+  min-height: auto;
+}
+.g365_data_manager_content_wrapper .g365-close-button,
+.g365_data_manager_content_wrapper .g365-close-button.button,
+.g365_data_manager_content_wrapper .gset .g365-close-button,
+.g365_data_manager_content_wrapper .gset .g365-close-button.button {
+  color: #f00;
+  border: #f00 solid 1px;
+  line-height: 1;
+}
+.g365_data_manager_content_wrapper .g365-close-button:hover,
+.g365_data_manager_content_wrapper .g365-close-button.button:hover,
+.g365_data_manager_content_wrapper .gset .g365-close-button:hover,
+.g365_data_manager_content_wrapper .gset .g365-close-button.button:hover {
+  background: #f00;
+  color: $primary-color;
+}
+.g365_data_manager_content_wrapper .add-button {
+  cursor: pointer;
+  padding: 3px 5px;
+  background: $white;
+  color: $alert-color;
+  border-radius: 4px;
+}
+.g365_data_manager_content_wrapper .remove-button,
+.g365_data_manager_content_wrapper .remove-button.button {
+  float: right;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 1;
+  background: $alert-color;color: $white;
+  text-align: center;
+}
+.g365_data_manager_content_wrapper .remove-button:hover,
+.g365_data_manager_content_wrapper .remove-button.button:hover {
+  background: darken($alert-color, 20%);
+  color: $light-gray;
+}
+.g365_data_manager_content_wrapper .g365-button+.g365-button {
+  margin-right: 10px;
+}
+.g365_data_manager_content_wrapper .form-collapse-title small {
+  color: $primary-color;
+  font-weight: 700;
+  background: $secondary-color;
+  padding: 1px 3px;
+}
+.g365_data_manager_content_wrapper .g365-form-data-wrapper>div+p {
+  display: none;
+}
+.g365_data_manager_content_wrapper .gset .error_item .input-group-label,
+.g365_data_manager_content_wrapper .error_item .input-group-label {
+  color: $alert-color;
+}
+.g365_data_manager_content_wrapper .error_item .input-group-field {
+  border-color: $alert-color;
+}
+
+
+.g365_data_manager_content_wrapper .button-list .remove-button {
+  padding: 0.2em 0.4em;
+}
+.g365_data_manager_content_wrapper .button-list {
+  list-style: none;
+  counter-reset: listRowNumber;
+  position: relative;
+  margin-bottom: $global-margin/2;
+}
+.g365_data_manager_content_wrapper .button-list li {
+}
+.g365_data_manager_content_wrapper .button-list li:before {
+  counter-increment: listRowNumber;
+	content: counter(listRowNumber);
+	position: absolute;
+  margin-top: 6px;
+  left: 0;
+	background: $primary-color;
+	color: $secondary-color;
+	border-radius: 50%;
+	border: $secondary-color solid 1px;
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  line-height: 1.5;
+}
+.g365_data_manager_content_wrapper .field-change-button .field-title {
+    float: left;
+}
+.g365_data_manager_content_wrapper .field-change-button {
+  background: lighten($secondary-color, 45%);
+}
+.g365_data_manager_content_wrapper .field-change-button .field-title {
+  float: left;
+}
+
+.g365_data_manager_content_wrapper .field-change-button.locked-in {
+  border-bottom: $light-gray dashed 1px;
+  margin-bottom: $global-margin/4;
+  padding-bottom: $global-padding/8;
+}
+.g365_data_manager_content_wrapper .gset .field-change-button {
+  color: $primary-color;
+}
+.g365_data_manager_content_wrapper h3.section_title {
+  line-height: 0.6;
+  margin-bottom: 0;
+  padding-top: $global-padding/4;
+}
+.g365_data_manager_content_wrapper .search-hero {
+	font-size: 1.5rem;
+	padding: 2rem 2rem 2rem 4rem;
+	border-color: $secondary-color;
+	box-shadow: inset 0 1px 2px $secondary-color;
+}
+.g365_data_manager_content_wrapper .search-mag {
+	position: absolute;
+	font-size: 2rem;
+	margin: 0.7rem 0 0 1.25rem;
+	color: $secondary-color;
+	z-index: 10;
+}
+.g365_data_manager_content_wrapper .md-form {
+	max-width: 100%;
+	width: 600px;
+	margin: 0 auto 1rem;
+}
+
+//input groups
+.g365_data_manager_content_wrapper .input-group {
+  display: flex;
+  width: 100%;
+  margin-bottom: $global-margin/2;
+  align-items: stretch;
+}
+.g365_data_manager_content_wrapper .input-group-field {
+  border-radius: 0;
+  flex: 1 1 0px;
+  height: auto;
+  min-width: 0;
+}
+.g365_data_manager_content_wrapper .input-group>:first-child {
+  border-radius: 0 0 0 0;
+}
+.g365_data_manager_content_wrapper .input-group-label:first-child {
+  border-right: 0;
+}
+.g365_data_manager_content_wrapper .input-group-label,
+.g365_data_manager_content_wrapper .input-group-field,
+.g365_data_manager_content_wrapper .input-group-button,
+.g365_data_manager_content_wrapper .input-group-button a,
+.g365_data_manager_content_wrapper .input-group-button input,
+.g365_data_manager_content_wrapper .input-group-button button,
+.g365_data_manager_content_wrapper .input-group-button label {
+  margin: 0;
+  white-space: nowrap;
+}
+.g365_data_manager_content_wrapper .input-group-label {
+  padding: 0 $global-padding/2;
+  border: 1px solid $light-gray;
+  background: $dark-gray;
+  color: $black;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+.g365_data_manager_content_wrapper .button-list .input-group-label {
+  background: none;
+}
+.g365_data_manager_content_wrapper .gset .input-group-label {
+  border-color: $white;
+  color: #00ff2a;
+}
+.g365_data_manager_content_wrapper .input-group-label.result-title {
+  width: 60%;
+}
+.g365_data_manager_content_wrapper .input-group-field.jersey-input[type='number'] {
+  width: 28%;
+}
+.g365_data_manager_content_wrapper .button-list .input-group-label.remove-button {
+  width: 10%;
+  padding-left: 3.5%;
+  margin-left: 2%;
+}
+
+//buttons
+.g365_data_manager_content_wrapper button,
+.g365_data_manager_content_wrapper .button {
+	text-transform: uppercase;
+  color: $primary-color;
+	border: $secondary-color solid 1px;
+  font-family: "Archivo Narrow", sans-serif;
+  white-space: normal;
+  height: auto;
+  transition: all 0.5s;
+}
+.g365_data_manager_content_wrapper .button.is-active {
+  background: $secondary-color;
+}
+.g365_data_manager_content_wrapper .button.expanded {
+  width: 100%;
+}
+.g365_data_manager_content_wrapper .button.expanded.alt {
+  letter-spacing: 3px;
+}
+.g365_data_manager_content_wrapper .hover .button,
+.g365_data_manager_content_wrapper button:hover,
+.g365_data_manager_content_wrapper .button:hover {
+	background-color: $secondary-color;
+}
+.g365_data_manager_content_wrapper .gset .hover .button,
+.g365_data_manager_content_wrapper button:hover,
+.g365_data_manager_content_wrapper .button:hover {
+  color: $primary-color;
+}
+.g365_data_manager_content_wrapper .button-group .button:hover {
+  border-color: $secondary-color;
+  background: $primary-color;
+  color: $white;
+}
+.g365_data_manager_content_wrapper .button-group .input-shrink.button {
+  color: $primary-color;
+}
+.g365_data_manager_content_wrapper .button-group .input-shrink.button:hover {
+  color: $primary-color;
+  border-color: $secondary-color;
+  background: $secondary-color;
+}
+.g365_data_manager_content_wrapper button:focus,
+.g365_data_manager_content_wrapper .button:focus {
+	outline: none;
+}
+.g365_data_manager_content_wrapper .button.disabled,
+.g365_data_manager_content_wrapper .button.disabled:hover,
+.g365_data_manager_content_wrapper .button.disabled:focus,
+.g365_data_manager_content_wrapper .button[disabled],
+.g365_data_manager_content_wrapper .button[disabled]:hover,
+.g365_data_manager_content_wrapper .button[disabled]:focus {
+	background-color: $white;
+}
+.g365_data_manager_content_wrapper .button .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+	border-color: $black;
+}
+.g365_data_manager_content_wrapper .menu .is-active > a {
+  background: $primary-color;
+  color: $white;
+}
+.g365_data_manager_content_wrapper .button.text-left {
+	text-align: left;
+}
+.g365_data_manager_content_wrapper .button.text-right {
+	text-align: right;
+}
+.g365_data_manager_content_wrapper .social-button a {
+	overflow: hidden;
+	width: 22px;
+}
+.g365_data_manager_content_wrapper .social-button i:before {
+	font-size: 22px;
+}
+.g365_data_manager_content_wrapper .menu>li.social-button>a img,
+.g365_data_manager_content_wrapper .menu>li.social-button>a i,
+.g365_data_manager_content_wrapper .menu>li.social-button>a svg {
+	margin-right: 1rem;
+}
+
+.g365_data_manager_content_wrapper .ls_result_footer .page_limit {
+  display: none;
+  margin-top: 5px;
+}
+.g365_data_manager_content_wrapper .ls_result_footer .navigation {
+  margin-top: 6px;
+}
+.g365_data_manager_content_wrapper .ls_result_footer .pagination {
+  margin: 7px 6px 0;
+}
+.g365_data_manager_content_wrapper .ls-arrow {
+  width: 25px;
+  margin-left: 6px;
+  height: 25px;
+  display: inline-block;
+}
+.g365_data_manager_content_wrapper .ls-arrow:before {
+  content: "";
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  border: solid $primary-color;
+  border-width: 0 3px 3px 0;
+  margin-right: 10px;
+  transition: transform 0.5s;
+}
+.g365_data_manager_content_wrapper .gset .ls-arrow:before {
+  border-color: $white;
+}
+.g365_data_manager_content_wrapper .right-arrow-button.ls-arrow:before {}
+.g365_data_manager_content_wrapper .left-arrow-button.ls-arrow:before {
+  transform: rotate(135deg);
+}
+.g365_data_manager_content_wrapper .ls-arrow:hover:before {
+  color: $secondary-color;
+}
+.g365_data_manager_content_wrapper .pagination::before,
+.g365_data_manager_content_wrapper .pagination::after {
+  display: table;
+  content: ' ';
+  flex-basis: 0;
+  order: 1;
+}
+.g365_data_manager_content_wrapper .pagination::after {
+  clear: both;
+}
+.g365_data_manager_content_wrapper .pagination .ls_current_page_lbl,
+.g365_data_manager_content_wrapper .pagination .ls_last_page_lbl {
+  display: inline;
+}
+
+.g365_data_manager_content_wrapper .relative {
+  position: relative;
+}
+.g365_data_manager_content_wrapper .event-list .input-group-label{
+  white-space: normal;
+  flex: auto;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+  text-align: left;
+  border-right: $white solid 1px;
+}
+.g365_data_manager_content_wrapper .event-list .input-group-label small{
+  width: 100%;
+  color: $white;
+}
+
+.g365_data_manager_content_wrapper .supplemental-data {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background: #ccc;
+  padding: 20px;
+  z-index: 10000;
+  overflow: auto;
+}
+.g365_data_manager_content_wrapper .tournament-player-img {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.g365_data_manager_content_wrapper .tournament-player-img.huge {
+  position: absolute;
+  width: auto;
+  top: calc(1% + 35px);
+  z-index: 10002;
+}
+.g365_data_manager_content_wrapper .tournament-player-img.profile_img {
+  max-width: 300px;
+}
+.g365_data_manager_content_wrapper .crop_img {
+  background: rgba($white,0.1);
+}
+.g365_data_manager_content_wrapper .crop_img .cropped_img {
+	max-width: 200px;
+}
+.g365_data_manager_content_wrapper .crop_img .cropped_img img {
+	max-width: 100%;
+}
+.g365_data_manager_content_wrapper .crop_img .crop-size {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 50px;
+  max-width: 800px;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container {
+  width: 100%;
+  height: 100%;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-image {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  max-height: none;
+  max-width: none;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-boundary {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-viewport,
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer {
+  position: absolute;
+  border: 2px solid $white;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 2000px 2000px rgba($black, 0.5);
+  z-index: 0;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer {
+  z-index: 2;
+  box-shadow: none;
+  pointer-events: none;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-vertical,
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-horisontal {
+  position: absolute;
+  pointer-events: all;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-vertical::after,
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-horisontal::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid $black;
+  background: $white;
+  width: 10px;
+  height: 10px;
+  content: '';
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-vertical {
+  bottom: -5px;
+  cursor: row-resize;
+  width: 100%;
+  height: 10px;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-vertical::after {
+  left: 50%;
+  margin-left: -5px;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-horisontal {
+  right: -5px;
+  cursor: col-resize;
+  width: 10px;
+  height: 100%;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-resizer-horisontal::after {
+  top: 50%;
+  margin-top: -5px;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-original-image {
+  display: none;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-vp-circle {
+  border-radius: 50%;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-overlay {
+  z-index: 1;
+  position: absolute;
+  cursor: move;
+  touch-action: none;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-slider-wrap {
+  width: 75%;
+  margin: 15px auto;
+  text-align: center;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-result {
+  position: relative;
+  overflow: hidden;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-result img {
+  position: absolute;
+}
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-image,
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-overlay,
+.g365_data_manager_content_wrapper .crop_img .croppie-container .cr-viewport {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-webkit-slider-thumb,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-moz-range-thumb,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-ms-thumb {
+  background: $secondary-color;
+}
+
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-webkit-slider-runnable-track,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider:focus::-webkit-slider-runnable-track,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-moz-range-track,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-ms-fill-upper,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider::-ms-fill-lower,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider:focus::-ms-fill-upper,
+.g365_data_manager_content_wrapper .gset .crop_img .cr-slider:focus::-ms-fill-lower {
+  background: $white;
+}
+
+.g365_data_manager_content_wrapper .crop_img .cr-slider {
+  -webkit-appearance: none;
+  /*removes default webkit styles*/
+	/*border: 1px solid white; *//*fix for FF unable to apply focus style bug */
+  width: 300px;
+  /*required for proper track sizing in FF*/
+  max-width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 0;
+  border-radius: 3px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $white;
+  margin-top: -6px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider:focus {
+  outline: none;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  background: rgba($black, 0.5);
+  border: 0;
+  border-radius: 3px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $white;
+  margin-top: -6px;
+}
+/*hide the outline behind the border*/
+.g365_data_manager_content_wrapper .crop_img .cr-slider:-moz-focusring {
+  outline: 1px solid $white;
+  outline-offset: -1px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-track {
+  width: 100%;
+  height: 5px;
+  background: transparent;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  border-color: transparent;/*leave room for the larger thumb to overflow with a transparent border */
+  border-width: 6px 0;
+  color: transparent;/*remove default tick marks*/
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-fill-lower {
+	background: rgba($black, 0.5);
+	border-radius: 10px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-fill-upper {
+	background: rgba($black, 0.5);
+	border-radius: 10px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-thumb {
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: $white;
+	margin-top:1px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider:focus::-ms-fill-lower {
+	background: rgba($black, 0.5);
+}
+.g365_data_manager_content_wrapper .crop_img .cr-slider:focus::-ms-fill-upper {
+	background: rgba($black, 0.5);
+}
+.g365_data_manager_content_wrapper .crop_img .cr-rotate-controls {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	z-index: 1;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-rotate-controls button {
+	border: 0;
+	background: none;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-rotate-controls i:before {
+	display: inline-block;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 22px;
+}
+.g365_data_manager_content_wrapper .crop_img .cr-rotate-l i:before {
+	content: '↺';
+}
+.g365_data_manager_content_wrapper .crop_img .cr-rotate-r i:before {
+	content: '↻';
+}
+
+
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-webkit-slider-thumb,
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-moz-range-thumb,
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-thumb {
+  background: $secondary-color;
+}
+
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-webkit-slider-runnable-track,
+.g365_data_manager_content_wrapper .crop_img .cr-slider:focus::-webkit-slider-runnable-track,
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-moz-range-track,
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-fill-upper,
+.g365_data_manager_content_wrapper .crop_img .cr-slider::-ms-fill-lower,
+.g365_data_manager_content_wrapper .crop_img .cr-slider:focus::-ms-fill-upper,
+.g365_data_manager_content_wrapper .crop_img .cr-slider:focus::-ms-fill-lower {
+  background: $white;
+}
+
+.g365_manage_wrapper .form-table .ls_result_main td {
+  padding: 0;
+}
+
+
+.g365_data_manager_content_wrapper .form-floater .g365_form_wrap .floated-form {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  display: block;
+  z-index: 10000;
+  overflow: auto;
+}
+.g365_data_manager_content_wrapper .form-floater .g365_form_wrap:before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 9999;
+  content: '';
+  background: rgba(0,0,0,0.6);
+}

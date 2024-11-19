@@ -1,0 +1,28 @@
+/********* Christian (chubby) CSS ***************/
+
+// .filepond-submit{
+//   max-width: 24em;
+// }
+
+.photo__img-container .photo-frames-container:hover {
+    border-color: #00ff2a;
+}
+
+.photo__img-container .photo-frames-container {
+    margin-left: 137px;
+    margin-bottom: 29px;
+    border: inset;
+    border-width: 8px;
+    border-color: #1a315b;
+}
+
+img.photo__img.photo-frames-image:hover {
+    opacity: 0.7;
+}
+
+
+.award_container {
+    height: 120px;
+}
+
+/*************************** end ************************/

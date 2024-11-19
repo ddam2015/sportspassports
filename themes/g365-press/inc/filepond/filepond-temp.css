@@ -1,0 +1,27 @@
+/**
+ * FilePond Custom Styles
+ */
+.g365_data_manager_content_wrapper  .filepond {
+	background: #ccc;
+}
+.g365_data_manager_content_wrapper .filepond--drop-label {
+	color: #4c4e53;
+}
+
+.g365_data_manager_content_wrapper .filepond--label-action {
+	text-decoration-color: #babdc0;
+}
+
+.g365_data_manager_content_wrapper .filepond--panel-root {
+	border-radius: 2em;
+	background-color: #edf0f4;
+	height: 1em;
+}
+
+.g365_data_manager_content_wrapper .filepond--item-panel {
+	background-color: #595e68;
+}
+
+.g365_data_manager_content_wrapper .filepond--drip-blob {
+	background-color: #7f8a9a;
+}

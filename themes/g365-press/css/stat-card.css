@@ -1,0 +1,921 @@
+ .stat-card.season-average-card#content>div>.ticker-container * {
+   color: white;
+ }
+
+.stat-card.season-average-card#content>div>.ticker-container small {
+   font-size: 1.5rem;
+ }
+
+.stat-card.season-average-card#content>div>.ticker__number {
+   font-size: 3.5rem;
+ }
+
+ .stat-card.season-average-card .profile-name {
+   width: auto!important;
+ }
+
+ .stat-card.season-average-card #profile-wrapper {
+   padding-left: 15px;
+ }
+
+ @media screen and (max-width: 800px) {
+   .stat-card.season-average-card #profile-stats-avg {
+     margin-top: 0!important;
+   }
+   .stat-card.season-average-card .stats__table-heading {
+     font-size: 30px!important;
+   }
+   .stat-card.season-average-card #profile-image-card+div>div {
+     max-width: 100%;
+   }
+   .stat-card.season-average-card #profile-stats-overview div {
+     display: initial!important;
+   }
+   .stat-card.season-average-card .stats__table--player th {
+     padding: 0.33rem;
+     font-size: 0.9rem;
+   }
+   .stat-card.season-average-card .stats__table--player td {
+     padding: 0.2rem 0.125rem 0.125rem
+   }
+ }
+
+ @media screen and (min-width: 800px) {
+   .stat-card.season-average-card .stats__table--player th {
+     font-size: 1.45rem;
+   }
+   .stat-card.season-average-card .stats__table--player td {
+     font-size: 2.3rem;
+   }
+ }
+
+ .stat-card.season-average-card .profile-name {
+   margin-top: 2rem;
+ }
+
+ .stat-card.season-average-card #profile-stats-overview {
+   padding-left: 17px;
+ }
+
+ .stat-card.season-average-card #profile-info th,
+ .stat-card.season-average-card #profile-info td {
+   font-size: 1rem;
+ }
+
+ .stat-card.season-average-card .sports-passport-text {
+   font-family: dharma-gothic-e, sans-serif !important;
+   color: #b5b5b5!important;
+   position: absolute;
+   left: 25px;
+   bottom: 10px;
+ }
+
+ .stat-card.season-average-card .ui-dialog-content {
+   padding-bottom: 15px;
+ }
+
+ .stat-card.season-average-card .ave_field>p {
+   color: white;
+   font-size: 15px;
+   text-align: center;
+ } 
+
+@media screen and (max-width: 800px) {
+    .dark-dialog{
+      top: 0 !important;  
+    }
+   
+    .dark-dialog.ui-dialog .ui-dialog-content{
+      padding: 0 10px 130px 10px!important;
+    }
+}
+
+/*  Dialog styling  */
+.dark-dialog.ui-dialog {
+    background: transparent !important;
+    border: none !important;
+    left: initial !important;
+    margin-top: env(safe-area-inset-top) !important;
+    overflow: hidden;
+}
+
+* {
+  -webkit-print-color-adjust:exact!important;
+  -moz-print-color-adjust:exact!important;;
+  print-color-adjust: exact!important;;
+}
+
+.label {
+  color: white !important;
+}
+
+@media print {
+  .ui-dialog.dark-dialog{
+    display: none;
+    left: 0;
+    top: 0;
+  }
+  .ui-dialog:not(.dark-dialog){
+    display: none;
+  }
+  .ui-widget-overlay, #page{
+    display: none;
+  }
+  .ui-dialog.dark-dialog .ui-dialog-content{
+    padding-bottom: 0;
+  }
+}
+
+
+
+/* DOWNLOAD styling */
+.dark-dialog .download {
+    font-size: 1.2rem;
+    font-family: dharma-gothic-e, sans-serif !important;
+    padding: 5px !important;
+    margin-left: 5px;
+}
+
+.dark-dialog.ui-dialog .ui-dialog-content {
+    overflow: visible !important;
+}
+
+
+.dark-dialog .ui-dialog-content.generating-card #profile-image-card h1 {
+    background: none !important;
+}
+
+.dark-dialog .ui-dialog-content.generating-card .help-tip {
+    display: none;
+}
+
+.dark-dialog .ui-dialog-content.generating-card .separator {
+    display: none !important;
+}
+
+.dark-dialog .ui-dialog-content.generating-card ::after {
+    display: none !important;
+}
+
+.dark-dialog .ui-dialog-content.generating-card ::before {
+    display: none !important;
+}
+
+
+.dark-dialog .download-wrapper .download {
+    border: 1px solid #888888;
+}
+
+.dark-dialog .download-wrapper {
+    position: relative;
+    top: -3px;
+    display: flex;
+    max-height: 27px;
+}
+
+.dark-dialog .download-wrapper .social_sharing-card div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  transform: scale(0.85);
+  position: relative;
+  right: -12px;
+}
+
+.dark-dialog .download-wrapper>div>div.small-padding-right{
+  display: none!important;
+}
+
+.dark-dialog .download-wrapper .small-padding-right{
+  padding-right: 5px!important;
+}
+#dialong_div > div.download-wrapper > div > div > div.small-padding-right{
+  display: none;
+}
+
+#twitter-widget-2{
+    border: 1px solid #999999!important;
+    border-radius: 12px!important;
+    position: relative!important;
+    top: 2.7px!important;
+    padding-top: 2px!important;
+    height: 24px!important;
+    margin-bottom: -2px!important;
+}
+
+
+@media screen and (max-width: 800px) {
+    .dark-dialog .download-wrapper {
+        position: absolute;
+        top: -32px;
+        right: 20px;
+        z-index: 999;
+    }
+  
+    .dark-dialog #profile-wrapper div:first-child{
+      overflow-x: visible!important;
+    }
+  
+    .dark-dialog .download{
+          font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (min-width: 800px) {
+  .dark-dialog .download-wrapper {
+        position: absolute;
+        top: -36px;
+        right: 20px;
+        z-index: 999;
+    }
+}
+
+/* End Download Styling  */
+
+
+@media screen and (max-width: 800px) {
+    .dark-dialog.ui-dialog {
+      width: 100vw !important;
+      height: 100vh !important;
+      position: fixed !important;
+      overflow-y: scroll !important;
+      top: 0 !important; 
+    }
+}
+
+.ui-dialog.dark-dialog tbody td {
+    font-size: 1rem;
+}
+
+.ui-dialog.dark-dialog tbody th {
+    font-size: 1rem;
+}
+
+.page-template-player-profile .profile-data th, .page-template-player-profile .profile-data td {
+    padding: 0 !important;
+}
+
+@media screen and (min-width: 800px) {
+    .dark-dialog.ui-dialog {
+        margin-left : calc(50vw - 300px) !important;
+        top: 50px !important;
+        position: fixed;
+        min-height: calc(100vh - 115px);
+        overflow-y: scroll;
+        bottom: 0;
+        left: 0;
+        max-height: calc(100vh - 150px);
+    }
+
+    .dark-dialog.ui-dialog {
+        width: 600px!important;
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .admin-bar .dark-dialog.ui-dialog {
+        top: 46px !important;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+.dark-dialog.ui-dialog .ui-dialog-titlebar {
+    background: black;
+    border-bottom: 1px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media screen and (max-width: 800px){
+  .dark-dialog.ui-dialog .ui-dialog-titlebar{
+    margin: -3px;
+  }
+}
+
+.dark-dialog .ui-dialog-titlebar .ui-button {
+    position: absolute;
+    top: 20px !important;
+    left: 10px !important;
+}
+
+.dark-dialog .ui-dialog-content {
+    background-color: #222222 !important;
+}
+
+
+@media screen and (max-width: 800px) {
+    .dark-dialog .ui-dialog-content {
+        padding-bottom: 46px !important;
+        margin: -3px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .dark-dialog .ui-dialog-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card .verified-age__tooltip, .verified-grade__tooltip {
+        left: -35vw;
+        max-width: 50vw
+    }
+}
+
+.stat-card .grid-margin-x > .small-12 {
+    width: 100%;
+}
+
+/* dialog content styling   */
+.dark-dialog #content.stat-card {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card #profile-image-card h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.stat-card #verification-badge:before {
+    content: '' !important;
+}
+
+.stat-card #verification-badge.verification-badge-top-right {
+    margin-top: 0;
+}
+
+.stat-card #qrcode {
+    position: relative !important;
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .stat-card #qrcode {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.stat-card #profile-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.stat-card .profile-name {
+    /*     margin-bottom: 24px; */
+    width: 240px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .stat-card .profile-name {
+        display: inline-block;
+        font-size: 2.5rem;
+        padding-bottom: 16px;
+        text-align: left;
+        position: relative;
+        top: -6px;
+    }
+
+    .stat-card #profile-wrapper > div {
+        margin-bottom: -1rem;
+    }
+}
+
+/*  TOP RIGHT  */
+
+.stat-card .all-tournament__details #spp_event_date h4 {
+    font-size: 35px;
+}
+
+.stat-card .all-tournament__details #spp_event_location h4 {
+    font-size: 25px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card .all-tournament__details #spp_event_date h4 {
+        font-size: 1.8rem;
+    }
+
+    .stat-card .all-tournament__details #spp_event_location h4 {
+        font-size: 1.2rem;
+    }
+}
+
+.stat-card #profile-image-card {
+    padding-left: 1.5rem !important;
+}
+
+.stat-card .profile-image-bg {
+    max-width: 8rem;
+}
+
+@media screen and (max-width: 700px) {
+    .stat-card #profile-image-card {
+        padding-left: 10px !important;
+    }
+}
+
+.stat-card .verification-badge-top-right {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card .verification-badge-top-right {
+        position: absolute !important;
+        top: 10px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stat-card #profile-games {
+        margin-top: 0;
+        padding: 0 0.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card .bottom-grid {
+        /*         padding-bottom: 1rem!important; */
+    }
+}
+
+.stat-card .bottom-grid img {
+    max-height: 105px;
+}
+
+
+.stat-card .no-margin-top {
+    margin-top: 0 !important;
+}
+
+.stat-card #profile-stats-avg table {
+    /*     margin-bottom: 12px!important; */
+    background: transparent;
+}
+
+.stat-card #profile-stats-avg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-card #profile-stats-avg {
+    margin-top: 0;
+    font-size: 2.6rem;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card #profile-stats-avg {
+        margin-top: 155px;
+        font-size: 2.4rem;
+    }
+}
+
+.stat-card .ui-dialog {
+    width: auto !important;
+}
+
+.stat-card .profile-image__player {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card .profile-image__player {
+        position: relative;
+/*         top: -20px; */
+    }
+}
+
+.stat-card #profile-games tbody tr:nth-child(odd) {
+    background-color: #fefefe;
+    padding: 0.3rem;
+}
+
+.stat-card tbody {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .stat-card #profile-info table {
+        width: 130%;
+    }
+
+    .stat-card #profile-info tbody {
+        font-size: 1rem;
+    }
+
+    .stat-card #profile-info th, #profile-info td {
+        padding: 0 0.2rem;
+    }
+}
+
+.stat-card .table-stats-player {
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .stat-card #right-player-score {
+        padding-right: 20px !important;
+    }
+}
+
+.stat-card #right-player-score .stats__table--player {
+    border: 2px solid white;
+    background-color: transparent;
+    position: relative;
+}
+
+.stat-card .profile #verification-badge{
+  background: transparent !important;
+}
+
+.stat-card .profile .verified-tag {
+    font-size: 1.2rem;
+}
+
+.stat-card .profile .separator{
+  z-index: 10;
+}
+
+.stat-card .profile .verified-tag:nth-child(2) {
+    z-index: 9;
+}
+
+.stat-card .profile {
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .stat-card #right-player-score > div > div > div:not(#verification-badge) {
+        position: relative;
+        padding: 0 1rem;
+        top: -115px;
+    }
+}
+
+.stat-card #right-player-score .stats__table--player > tr {
+    background-color: transparent !important;
+    border-bottom: none;
+}
+
+.stat-card .allow-overflow {
+    overflow: visible !important;
+}
+
+.stat-card #right-player-score .stats__table--player tr > {
+    position: relative;
+}
+
+.stat-card #right-player-score .stats__table--player tr > td {
+    background-color: transparent;
+    font-size: 45px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -4px 2px 1px #777777;
+}
+
+@media screen and (max-width: 1100px) {
+    .stat-card #right-player-score .stats__table--player tr > td {
+        font-size: 70px;
+        text-shadow: -1.2px 1px 1px #777777;
+    }
+}
+
+.stat-card #right-player-score .stats__table--player > tr > th {
+    background-color: transparent;
+    font-size: 32px;
+    color: white;
+    text-shadow: -3px 1px 1px #777777;
+}
+
+@media screen and (max-width: 1300px) {
+    .stat-card #right-player-score .stats__table--player > tr > th {
+        background-color: transparent;
+        font-size: 1.5rem;
+        color: white;
+        text-shadow: -0.5px 01px 1px #777777;
+    }
+
+    .stat-card #right-player-score .stats__table--player tr > td {
+        font-size: 2.3rem;
+        text-shadow: -0.5px 1px 1px #777777;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card #right-player-score .stats__table--player tr > td {
+        font-size: 1.2rem;
+        text-shadow: -1.5px 1px 1px #777777;
+    }
+
+    .stat-card #right-player-score .stats__table--player > tr > th {
+        background-color: transparent;
+        font-size: 1rem;
+        color: white;
+        text-shadow: -1.5px 1px 1px #777777;
+    }
+
+    .stat-card tbody th, .stat-card tbody tr {
+        padding: 0.8rem;
+    }
+
+    .stat-card .cts_res {
+        height: 5rem;
+    }
+
+    .averages {
+        padding: 0;
+    }
+
+    th.averages {
+        padding: 0 !important;
+    }
+}
+
+.stat-card .cts_res {
+    height: 3rem;
+}
+
+/*  DECORATIONS  */
+
+/*  Any modern browser but Safari and Internet Explorer (Chrome 28+, Firefox 22+, MS Edge-all)  */
+@supports (not (-webkit-hyphens:none)) {
+    .stat-card #right-player-score .stats__table--player tr > td:last-child::after {
+        content: '';
+        height: 116%;
+        width: 10%;
+        position: absolute;
+        top: -8%;
+        left: 93%;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+
+    @media screen and (max-width: 800px) {
+        .stat-card #right-player-score .stats__table--player tr > td:last-child::after {
+            height: 130%;
+            width: 10%;
+            top: -15%;
+            left: 95%;
+        }
+    }
+
+    .stat-card #right-player-score .stats__table--player tr > td:first-child::after {
+        content: '';
+        height: 116%;
+        width: 10%;
+        position: absolute;
+        top: -8%;
+        left: -3%;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+
+    @media screen and (max-width: 800px) {
+        .stat-card #right-player-score .stats__table--player tr > td:first-child::after {
+            height: 130%;
+            width: 10%;
+            top: -15%;
+            left: -6%;
+        }
+    }
+
+    .stat-card #right-player-score .stats__table--player tr > td:first-child::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -10.5%;
+        left: 6%;
+        border: 6px solid white;
+    }
+
+    .stat-card #right-player-score .stats__table--player tr > td:nth-child(4)::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -10.5%;
+        left: 6%;
+        border: 6px solid white;
+    }
+
+    .stat-card #right-player-score .stats__table--player tr > td:nth-child(4)::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -10.5%;
+        right: 6%;
+        border: 6px solid white;
+    }
+
+    .stat-card #right-player-score .stats__table--player tr > td:nth-child(3)::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -10.5%;
+        right: 6%;
+        border: 6px solid white;
+    }
+
+    @media screen and (max-width: 800px) {
+        .stat-card #right-player-score .stats__table--player tr > td:first-child::before {
+            bottom: -0.5%;
+            left: 10%;
+            border-width: 4px;
+        }
+
+        .stat-card #right-player-score .stats__table--player tr > td:first-child::before {
+            top: -20.5%;
+            left: 4%;
+            border-width: 4px;
+        }
+
+        .stat-card #right-player-score .stats__table--player tr > td:nth-child(4)::before {
+            bottom: -20.5%;
+            left: 4%;
+            border-width: 4px;
+        }
+
+        .stat-card #right-player-score .stats__table--player tr > td:nth-child(4)::after {
+            bottom: -20.5%;
+            right: 4%;
+            border-width: 4px;
+        }
+
+        .stat-card #right-player-score .stats__table--player tr > td:nth-child(3)::after {
+            top: -21.5%;
+            right: 4%;
+            border-width: 4px;
+        }
+
+        .stat-card #right-player-score .stats__table--player tr > td:nth-child(3)::before {
+            top: -21.5%;
+            right: 3%;
+            border-width: 4px;
+        }
+    }
+}
+
+
+/*  BOTTOM PART   */
+.stat-card .team_logo_box img {
+    height: 45px !important;
+    width: 56px !important;
+}
+
+.stat-card .cts_res_box span {
+    font-size: 8px !important;
+}
+
+.stat-card .opp_logo_box img {
+    height: 45px !important;
+    width: 56px !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .stat-card .opp_logo_box.hide-for-small-medium {
+        display: initial !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    .stat-card .stats_customize .cts_res_box > div:nth-child(2) > span:first-child {
+        padding-right: 0;
+    }
+
+    .stat-card .opp_logo_box > a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stat-card .opp_logo_box.hide-for-small-medium img {
+        max-width: 60px;
+        max-height: 50px;
+        width: auto !important;
+        position: relative;
+        top: 10px;
+    }
+}
+
+
+.stat-card .cts_res_box button {
+    display: none;
+}
+
+.stat-card #profile-games.profile-games-bottom {
+    padding: 0 13px;
+    margin-top: -69px;
+    margin-left: -0.6rem;
+}
+
+.stat-card .profile {
+    align-items: center;
+}
+
+.stat-card #profile-games table {
+    border-top: 1px solid #222222;
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card #profile-game {
+        padding: 0 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .stat-card #profile-games.profile-games-bottom {
+        margin-top: 0;
+    }
+}
+
+/*  Fix text overflow on table  */
+@media screen and (min-width: 800px) {
+    .stat-card .cts_res_box > div:nth-child(3) > .large-8 {
+        width: 50%;
+    }
+}
+
+.stat-card #profile-name {
+    padding: 0;
+}
+
+.stat-card #profile-name .tabs-content {
+    background: transparent !important;
+    border: none;
+}
+
+.stat-card .stats__table--playerGames {
+    background-color: #222222 !important;
+}
+
+.stat-card .stats__table--playerGames th {
+    background-color: black;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+@media screen and (min-width: 600px) {
+    .stat-card .stats__table--playerGames th {
+        font-size: 1.3rem;
+    }
+
+    .stat-card .stats__table--playerGames tr {
+        font-size: 1.3rem;
+    }
+
+    .stat-card .stats__table--playerGames {
+        border-bottom: 13px solid white;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .stat-card tr.stats__table--playerGames > th {
+        font-size: 1rem !important;
+    }
+
+    .stat-card .stats_customize.cts_res {
+        margin-bottom: 0 !important;
+    }
+}
+
+.stat-card .stats__body .stats_customize {
+    margin-bottom: 0;
+}
+
+.stat-card .stats__body td:first-child {
+    padding-left: 0 !important;
+}
+
+.stat-card .stats__table--playerGames th:nth-child(1) {
+    background-color: #222222 !important;
+    opacity: 0;
+}

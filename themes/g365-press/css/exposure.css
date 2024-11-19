@@ -1,0 +1,98 @@
+/* @import url(https://fonts.googleapis.com/css?family=Economica:400,700|Exo+2:700,900); */
+
+body {
+/* 	font-family: 'Economica', sans-serif; */
+	font-size: 18px;
+	line-height: 24px;
+}
+body.no-wrapper #content {
+	padding: 40px 0;
+/* 	margin-top: 40px;
+	margin-bottom: 40px; */
+}
+.basketball a,
+.basketball a:visited,
+.basketball a:active {
+	color: #1a315b;
+}
+.well,
+body.widgets-schedule .divisions-list .division a,
+body.event-schedule .divisions-list .division a,
+body.adidas-schedule .divisions-list .division a,
+.submission-callout {
+    border: 1px solid #1a315b;
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
+}
+h1, h2, h3, h4, h5, h6,
+body.widgets-schedule .divisions-list .division a .title,
+body.event-schedule .divisions-list .division a .title,
+body.adidas-schedule .divisions-list .division a .title {
+/* 	font-family: 'Exo 2', sans-serif; */
+}
+a, .basketball a,
+button, .button,
+input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, img {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.btn-dark {
+    background: #fff;
+    color: #212529;
+}
+.well, body.widgets-schedule .divisions-list .division a, body.event-schedule .divisions-list .division a, body.adidas-schedule .divisions-list .division a, .submission-callout {
+	border: 1px solid #00ff2a;
+	color: #1a315b;
+	background: #daffe0;
+}
+.basketball body.widgets-schedule .divisions-list .division a:hover, .basketball body.event-schedule .divisions-list .division a:hover, .basketball body.adidas-schedule .divisions-list .division a:hover {
+	background: #00ff2a;
+	color: #1a315b;
+}
+body.event-pools .division-pool .header, body.widgets-pools .division-pool .header, body.event-schedule .division-pool .header, body.widgets-schedule .division-pool .header {
+	background: #00ff2a;
+	color: #1a315b;
+}
+body.no-wrapper .powered-by a,
+body.no-wrapper .powered-by a:hover,
+body.no-wrapper .powered-by a:visited {
+	background-color: #1a315b !important;
+	color: #00ff2a;
+}
+.game-group {
+	border: 1px solid #daffe0;
+	background-color: #00ff2a;
+	font-size: 17px;
+	line-height: 1.2;
+	color: #1a315b;
+}
+.game-group:hover {
+	border: solid 1px #daffe0;
+	background-color: #00b31d;
+}
+.game-box .buttons .actions {
+	background: #daffe0;
+}
+.game-box {}
+.game-box .datetime-header, .game-box .location-header {
+	font-size: 14px;
+}
+.game-box .buttons {
+	font-size: 14px;
+}
+
+.border-gray-darken {
+    border: 1px solid #8a8a8a;
+}
+
+.card {
+    border: 1px solid #cacaca;
+}
+
+.table-sm td {
+    padding: 0.2rem;
+}

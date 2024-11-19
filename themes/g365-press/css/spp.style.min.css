@@ -1,0 +1,411 @@
+/**
+ * Description: CSS to support Sportspassports website
+ * Version: 1.0
+ */
+@import url('https://use.typekit.net/inz6gyf.css');
+
+body .spp-container{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #3a3a3a;
+  margin-top: 2rem;
+}
+
+.spp-container .hide {
+  display: none !important;
+}  
+.spp-container .grid-container {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media print, screen and (min-width: 40em) {
+.spp-container .grid-container {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+  }
+.spp-container .grid-x {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@media screen and (max-width: 640px) {
+.spp-container .grid-x > .small-1 {
+  width: 8.33333%; }
+
+.spp-container .grid-x > .small-2 {
+  width: 16.66667%; }
+
+.spp-container .grid-x > .small-3 {
+  width: 25%; }
+
+.spp-container .grid-x > .small-4 {
+  width: 33.33333%; }
+
+.spp-container .grid-x > .small-5 {
+  width: 41.66667%; }
+
+.spp-container .grid-x > .small-6 {
+  width: 50%; }
+
+.spp-container .grid-x > .small-7 {
+  width: 58.33333%; }
+
+.spp-container .grid-x > .small-8 {
+  width: 66.66667%; }
+
+.spp-container .grid-x > .small-9 {
+  width: 75%; }
+
+.spp-container .grid-x > .small-10 {
+  width: 83.33333%; }
+
+.spp-container .grid-x > .small-11 {
+  width: 91.66667%; }
+
+.spp-container .grid-x > .small-12 {
+  width: 100%; }
+}
+
+
+.spp-container .text-center {
+  text-align: center;
+}
+
+.spp-container h1, .spp-container .h1,
+.spp-container h2, .spp-container .h2,
+.spp-container h3, .spp-container .h3,
+.spp-container h4, .spp-container .h4,
+.spp-container h5, .spp-container .h5,
+.spp-container h6, .spp-container .h6 {
+  font-family: dharma-gothic-e, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #3a3a3a;
+  text-rendering: optimizeLegibility; }
+  .spp-container h1 small, .spp-container .h1 small,
+  .spp-container h2 small, .spp-container .h2 small,
+  .spp-container h3 small, .spp-container .h3 small,
+  .spp-container h4 small, .spp-container .h4 small,
+  .spp-container h5 small, .spp-container .h5 small,
+  .spp-container h6 small, .spp-container .h6 small {
+    line-height: 0;
+    color: #8a8a8a; }
+
+
+.spp-container h1, .spp-container .h1 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.spp-container h2, .spp-container .h2 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.spp-container h3, .spp-container .h3 {
+  font-size: 1.1875rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.spp-container h4, .spp-container .h4 {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.spp-container h5, .spp-container .h5 {
+  font-size: 1.0625rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.spp-container h6, .spp-container .h6 {
+  font-size: 1rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+@media print, screen and (min-width: 40em) {
+  .spp-container h1, .spp-container .h1 {
+    font-size: 3rem; }
+  .spp-container h2, .spp-container .h2 {
+    font-size: 2.5rem; }
+  .spp-container h3, .spp-container .h3 {
+    font-size: 1.9375rem; }
+  .spp-container h4, .spp-container .h4 {
+    font-size: 1.5625rem; }
+  .spp-container h5, .spp-container .h5 {
+    font-size: 1.25rem; }
+  .spp-container h6, .spp-container .h6 {
+    font-size: 1rem; } }
+
+
+@media print, screen and (min-width: 40em) {
+  .spp-container .grid-x > .medium-auto {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0px;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    width: auto; }
+ .spp-container .grid-x > .medium-shrink,.spp-container .grid-x > .medium-1,.spp-container .grid-x > .medium-2,.spp-container .grid-x > .medium-3,.spp-container .grid-x > .medium-4,.spp-container .grid-x > .medium-5,.spp-container .grid-x > .medium-6,.spp-container .grid-x > .medium-7,.spp-container .grid-x > .medium-8,.spp-container .grid-x > .medium-9,.spp-container .grid-x > .medium-10,.spp-container .grid-x > .medium-11,.spp-container .grid-x > .medium-12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+ .spp-container .grid-x > .medium-shrink {
+    width: auto; }
+ .spp-container .grid-x > .medium-1 {
+    width: 8.33333%; }
+ .spp-container .grid-x > .medium-2 {
+    width: 16.66667%; }
+ .spp-container .grid-x > .medium-3 {
+    width: 25%; }
+ .spp-container .grid-x > .medium-4 {
+    width: 33.33333%; }
+ .spp-container .grid-x > .medium-5 {
+    width: 41.66667%; }
+ .spp-container .grid-x > .medium-6 {
+    width: 50%; }
+ .spp-container .grid-x > .medium-7 {
+    width: 58.33333%; }
+ .spp-container .grid-x > .medium-8 {
+    width: 66.66667%; }
+ .spp-container .grid-x > .medium-9 {
+    width: 75%; }
+ .spp-container .grid-x > .medium-10 {
+    width: 83.33333%; }
+ .spp-container .grid-x > .medium-11 {
+    width: 91.66667%; }
+ .spp-container .grid-x > .medium-12 {
+    width: 100%; } }
+
+
+@media print, screen and (min-width: 64em) {
+ .spp-container .grid-x > .large-auto {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0px;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    width: auto; }
+ .spp-container .grid-x > .large-shrink,.spp-container .grid-x > .large-1,.spp-container .grid-x > .large-2,.spp-container .grid-x > .large-3,.spp-container .grid-x > .large-4,.spp-container .grid-x > .large-5,.spp-container .grid-x > .large-6,.spp-container .grid-x > .large-7,.spp-container .grid-x > .large-8,.spp-container .grid-x > .large-9,.spp-container .grid-x > .large-10,.spp-container .grid-x > .large-11,.spp-container .grid-x > .large-12 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+ .spp-container .grid-x > .large-shrink {
+    width: auto; }
+ .spp-container .grid-x > .large-1 {
+    width: 8.33333%; }
+ .spp-container .grid-x > .large-2 {
+    width: 16.66667%; }
+ .spp-container .grid-x > .large-3 {
+    width: 25%; }
+ .spp-container .grid-x > .large-4 {
+    width: 33.33333%; }
+ .spp-container .grid-x > .large-5 {
+    width: 41.66667%; }
+ .spp-container .grid-x > .large-6 {
+    width: 50%; }
+ .spp-container .grid-x > .large-7 {
+    width: 58.33333%; }
+ .spp-container .grid-x > .large-8 {
+    width: 66.66667%; }
+ .spp-container .grid-x > .large-9 {
+    width: 75%; }
+ .spp-container .grid-x > .large-10 {
+    width: 83.33333%; }
+ .spp-container .grid-x > .large-11 {
+    width: 91.66667%; }
+ .spp-container .grid-x > .large-12 {
+    width: 100%; } 
+
+
+
+.spp-container #statleader-form > div:first-of-type {
+  margin-right: 5rem;
+}
+}
+
+.spp-container .small-padding-right {
+  padding-right: 1rem;
+}
+
+.spp-container .width-50-200 {
+  max-width: 50%;
+  width: 200px;
+}
+
+.spp-container select {
+  height: 2.4375rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #696969;
+  border-radius: 5px;
+  background-color: #fefefe;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #1a315b;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right -1rem center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+  padding-right: 1.5rem;
+  -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+}
+
+.spp-container .all-tournament__details {
+  display: flex;
+  align-items: center;
+}
+
+.spp-container .stat-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-top: solid;
+    border-top-width: medium;
+    border-top-color: currentcolor;
+  border-radius: 5px;
+  border-color: #000;
+  border-top-width: medium;
+}
+
+.spp-container .stat-table thead tr {
+  background: black;
+  color: white;
+}
+.spp-container .stat-table thead, .spp-container .stat-table tbody, .spp-container .stat-table tfoot {
+  border: 1px solid #f1f1f1;
+  background-color: #fefefe;
+}
+
+.spp-container .stat-table thead th, .spp-container .stat-table thead td, .spp-container .stat-table tfoot th, .spp-container .stat-table tfoot td {
+  padding: 0.5rem 0.625rem 0.625rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.spp-container .stat-table tbody th,.spp-container .stat-table tbody td {
+  padding: 0.5rem 0.625rem 0.625rem;
+}
+
+.spp-container .stat-table tr:nth-of-type(even) {
+  background: #f2f2f2;
+}
+
+.spp-container .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.spp-container .align-middle {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.spp-container .image-wrapper {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.spp-container .image-wrapper img {
+  display: inline;
+  margin: 0 auto;
+  height: 150%;
+  width: auto;
+}
+
+.spp-container a.flex {
+  text-decoration: none;
+  color: black;
+}
+
+.spp-container a.flex:hover, .spp-container a.flex:focus {
+  color: #3462b7;
+}
+
+.spp-container #slb_submit_btn {
+    display: block;
+  padding: 10px 30px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.spp-container #statleader-form {
+  margin-top: 1rem;
+  flex-wrap: nowrap;
+}
+
+.spp-container #slb_submit_btn:hover {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 640px) {
+  .spp-container .grid-container {
+    padding: 0;
+  }
+  .spp-container .stat-header__wrap, .spp-container .stat-header__img {
+    width: 100%;
+  }
+  .spp-container #statleader-form {
+    flex-direction: column;
+  }
+  .spp-container #statleader-form > div,.spp-container  #statleader-form select {
+    width: 100% !important;
+  }
+  
+  .spp-container #slb_submit_btn {
+    width: 100%;
+margin-bottom: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 640px) {
+.spp-container #statleader-form > div {
+  width: auto;
+}
+ 
+.image-wrapper img[src*="https://dev.sportspassports.com/wp-content/uploads/event-profiles/g365_profile_placeholder.gif"] ,
+.image-wrapper img[src*="https://sportspassports.com/wp-content/uploads/event-profiles/g365_profile_placeholder.gif"] {
+  object-position: 0 -10px;
+}

@@ -1,0 +1,135 @@
+#loginform p {
+	margin-bottom: 0;
+}
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	min-width: 100px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select,
+label.error {
+  display: inline-block;
+}
+label.error {
+  margin-left: 10px;
+  color: #f00;
+}
+
+input[type="text"].ewd-feup-text-input,
+input[type="password"].ewd-feup-text-input {
+  display: inline;
+}
+.widefat,
+.full-width {
+  width: 100%;
+}
+table.widefat {
+  border: 1px solid #e5e5e5;
+}
+table.widefat thead {
+  border-bottom: 1px solid #e5e5e5;
+}
+table.widefat td,
+table.widefat th {
+  padding: 6px;
+  text-align: left;
+}
+table.widefat tbody tr:nth-child(odd) {
+  background: #eee;
+}
+.form-table th {
+  vertical-align: top;
+}
+a.pointer {
+  cursor: pointer;
+}
+.line-height-1 {
+	line-height: 1;
+}
+.update-button {
+  text-indent: -500px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+a.update-button:before {
+  content: "Update";
+  position: absolute;
+  left: 0;
+  text-indent: 0;
+}
+
+.logout-form a {
+  text-align: right;
+  margin-top: 34px;
+  float: right;
+}
+
+.button-list li {
+  display: inline-block;
+}
+.button-list button.selected {
+  background: linear-gradient(#FFDD15, #BB9900);
+  border-color: orange;
+}
+#content-group .content-wrap {
+  display: none;
+}
+#content-group .content-wrap.active {
+  display: block;
+}
+.form-message {
+  margin-left: 10px;
+}
+.success, .form-message[status='success'] {
+  color: green;
+}
+.error, .form-message[status='error'] {
+  color: red;
+}
+
+
+/* modal overlay */
+.modal-root {
+    position: absolute;	
+    width: 100%;
+}
+.veil{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	opacity: 0.75;
+	z-index: 9998;
+	background-color: rgb(0, 0, 0);
+}
+.veilContentWrapper{
+	position: relative;
+	top: 40px;
+	z-index: 9999;
+	width: 800px;
+	max-width: 80%;
+	margin: 0 auto 40px;
+	padding: 40px;
+	background: #fff;
+	text-align: center;
+}
+.closer{
+	color: #fff;
+	margin-top: .5em;
+	padding: 5px 10px;
+	background: #666;
+	border: #fff solid 1px;
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+}
+

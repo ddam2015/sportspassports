@@ -1,0 +1,1 @@
+<?php g365_dir_render('player-profile', 'game-stat', $player_id, $arg); ?>
